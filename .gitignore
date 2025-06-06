@@ -22,16 +22,46 @@ wheels/
 
 # Virtual Environment
 venv/
-ENV/
 env/
-.env
+ENV/
 
 # IDE
 .idea/
 .vscode/
 *.swp
 *.swo
+.project
+.pydevproject
 
-# Misc
+# Data and Logs
+*.log
+*.sqlite
+*.db
+data/raw_news/*
+data/processed_news/*
+data/sentiment_results/*
+data/reports/*
+!data/*/README.md
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Documentation
+docs/_build/
+site/
+
+# Notebooks
+.ipynb_checkpoints
+notebooks/.ipynb_checkpoints/
+
+# OS
 .DS_Store
 Thumbs.db 
